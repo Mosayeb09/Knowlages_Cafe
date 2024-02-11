@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/LtPMVzW/pexels-suzy-hazelwood-1130980.jpg",
+      "title": "The Great Adventure",
+      "author": "Alex Johnson",
+      "author_img": "https://i.ibb.co/qskymnq/profile.png",
+      "posted_date": "2024-02-10",
+      "reading_time": "50 minutes",
+      "hashtags": ["#adventure", "#exploration", "#journey"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/WvkPs18/pexels-skitterphoto-1005324.jpg",
+      "title": "Recipes for Every Occasion",
+      "author": "Emily Brown",
+      "author_img": "https://i.ibb.co/q1YLQhF/pexels-andrew-dick-697509.jpg",
+      "posted_date": "2024-02-09",
+      "reading_time": "35 minutes",
+      "hashtags": ["#cooking", "#recipes", "#food"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/8YXZQfc/pexels-suzy-hazelwood-1204743.jpg",
+      "title": "Mastering JavaScript",
+      "author": "Michael Smith",
+      "author_img": "https://i.ibb.co/fq0KyD6/pexels-pixabay-34534.jpg",
+      "posted_date": "2024-02-08",
+      "reading_time": "75 minutes",
+      "hashtags": ["#javascript", "#programming", "#webdev"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/0Y1Fq58/pexels-lisa-fotios-2090104.jpg",
+      "title": "Art of Painting: Techniques and Inspiration",
+      "author": "Sophia Martinez",
+      "author_img": "https://i.ibb.co/34ktF4N/pexels-maria-orlova-4906334.jpg",
+      "posted_date": "2024-02-07",
+      "reading_time": "40 minutes",
+      "hashtags": ["#art", "#painting", "#creativity"]
+    }
+]
