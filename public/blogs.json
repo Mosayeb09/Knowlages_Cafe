@@ -6,7 +6,7 @@
       "author": "Alex Johnson",
       "author_img": "https://i.ibb.co/FqqsJm6/pexels-alexander-krivitskiy-1161668.jpg",
       "posted_date": "2024-02-10",
-      "reading_time": "50",
+      "reading_time": 50,
       "hashtags": ["#adventure", "#exploration", "#journey"]
     },
     {
@@ -16,7 +16,7 @@
       "author": "Emily Brown",
       "author_img": "https://i.ibb.co/q1YLQhF/pexels-andrew-dick-697509.jpg",
       "posted_date": "2024-02-09",
-      "reading_time": "35",
+      "reading_time": 35,
       "hashtags": ["#cooking", "#recipes", "#food"]
     },
     {
@@ -26,7 +26,7 @@
       "author": "Michael Smith",
       "author_img": "https://i.ibb.co/fq0KyD6/pexels-pixabay-34534.jpg",
       "posted_date": "2024-02-08",
-      "reading_time": "75",
+      "reading_time": 75,
       "hashtags": ["#javascript", "#programming", "#webdev"]
     },
     {
@@ -36,7 +36,7 @@
       "author": "Sophia Martinez",
       "author_img": "https://i.ibb.co/34ktF4N/pexels-maria-orlova-4906334.jpg",
       "posted_date": "2024-02-07",
-      "reading_time": "40",
+      "reading_time": 40,
       "hashtags": ["#art", "#painting", "#creativity"]
     }
 ]

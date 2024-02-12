@@ -3,15 +3,15 @@ import { BsBookmarkCheckFill } from "react-icons/bs";
 
 
 
-const Blog = ({ blog,handleBookmarks }) => {
+const Blog = ({ blog,handleBookmarks,handleMarkasRead }) => {
 
     const {title ,cover,author,author_img,posted_date,hashtags, reading_time} = blog; 
 
     return (
-        <div className='mb-20'>
+        <div className='mb-20 space-y-4'>
             <img className='w-full mb-8   ' src={cover} alt={`cover picture of the title ${title}`} />
             
-            <div className='flex justify-between'>
+            <div className='flex justify-between '>
                 <div className='flex  '>
                     <img className='w-14 rounded-full   ' src={author_img} alt="" />
                     <div className='ml-6 '>
@@ -37,6 +37,10 @@ const Blog = ({ blog,handleBookmarks }) => {
                     hashtags.map((hash,idx) => <span className='ml-2' key={idx}><a href="">{hash}</a></span> )
                 }
                </p>
+               <button 
+               onClick={() =>handleMarkasRead(reading_time)}
+               className=' text-purple-800 font-bold underline'>Mark As Read</button>
+
             </div>
 
         </div>
@@ -45,7 +49,8 @@ const Blog = ({ blog,handleBookmarks }) => {
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleBookmarks:PropTypes.func
+    handleBookmarks:PropTypes.func,
+    handleMarkasRead:PropTypes.func
 
 }
 
