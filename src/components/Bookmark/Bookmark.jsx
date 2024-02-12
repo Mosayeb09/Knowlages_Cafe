@@ -5,13 +5,14 @@ const Bookmark = ({bookmark}) => {
 
     const {title} = bookmark;
     return (
-        <div>
+        <div className='bg-slate-200 m-4 rounded  '>
+            <h3 className='text-2xl'>{title}</h3>
             
         </div>
     );
 };
 
-Bookmark.prototype = {
+Bookmark.propTypes = {
     bookmark: PropTypes.object
 }
 
