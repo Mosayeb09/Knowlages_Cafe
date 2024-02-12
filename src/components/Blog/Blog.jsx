@@ -1,16 +1,52 @@
 import PropTypes from 'prop-types';
+import { BsBookmarkCheckFill } from "react-icons/bs";
 
-const Blog = ({ blog }) => {
+
+
+const Blog = ({ blog,handleBookmarks }) => {
+
+    const {title ,cover,author,author_img,posted_date,hashtags, reading_time} = blog; 
 
     return (
-        <div>
+        <div className='mb-20'>
+            <img className='w-full mb-8   ' src={cover} alt={`cover picture of the title ${title}`} />
             
+            <div className='flex justify-between'>
+                <div className='flex  '>
+                    <img className='w-14 rounded-full   ' src={author_img} alt="" />
+                    <div className='ml-6 '>
+                        <h3 className='text-4xl'>
+                            {author}
+                        </h3>
+                        <p>{posted_date}</p>
+                    </div>
+                </div>
+                <div>
+                
+                 <span>{reading_time} mit read</span>
+                 <button
+                    onClick={()=> handleBookmarks(blog)} className='ml-2 '><BsBookmarkCheckFill></BsBookmarkCheckFill>
+                 </button>
+                  
+                </div>
+            </div>
+            <div>
+               <h2 className='text-2xl'>{title}</h2>
+               <p >
+                {
+                    hashtags.map((hash,idx) => <span className='ml-2' key={idx}><a href="">{hash}</a></span> )
+                }
+               </p>
+            </div>
+
         </div>
     );
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleBookmarks:PropTypes.func
+
 }
 
 export default Blog;

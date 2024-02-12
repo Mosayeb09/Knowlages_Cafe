@@ -1,9 +1,9 @@
 
 
-const Bookmarks = () => {
+const Bookmarks = ({bookmarks}) => {
     return (
-        <div>
-            <h2 className="md:w-1/3">Booksmark</h2>
+        <div className="md:w-1/3">
+            <h2 className="text-3xl ">Booksmarked Blogs :{bookmarks}</h2>
         </div>
     );
 };
