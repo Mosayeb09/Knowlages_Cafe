@@ -5,7 +5,7 @@ import { BsBookmarkCheckFill } from "react-icons/bs";
 
 const Blog = ({ blog,handleBookmarks,handleMarkasRead }) => {
 
-    const {title ,cover,author,author_img,posted_date,hashtags, reading_time} = blog; 
+    const {title ,cover,author,author_img,id,posted_date,hashtags, reading_time} = blog; 
 
     return (
         <div className='mb-20 space-y-4'>
@@ -38,7 +38,7 @@ const Blog = ({ blog,handleBookmarks,handleMarkasRead }) => {
                 }
                </p>
                <button 
-               onClick={() =>handleMarkasRead(reading_time)}
+               onClick={() =>handleMarkasRead(id,reading_time)}
                className=' text-purple-800 font-bold underline'>Mark As Read</button>
 
             </div>
